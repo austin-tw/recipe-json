@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: whitesmoke;
+}
+header {
+  background-color: #264653;
+}
+
+main,
+nav {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+/* =============== Nav ================ */
+nav {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#link-box {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+
+  margin: 0.5rem 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #e9c46a;
+  text-decoration: underline;
+}
+#logo-box {
+  margin: 0;
+}
+#main-logo {
+  width: 9rem;
+  height: auto;
+}
+/* =============== Main ================ */
+#selectRecipe {
+  display: inline-block;
+}
+#dishDropdown {
+  display: inline-block;
+  margin-left: 1rem;
+}
+#prep {
+  line-height: 1.5;
+  margin: 1rem;
+}
+li {
+  margin: 0.2rem 0;
+}
+#instructionsList li {
+  list-style: none;
+  margin: 1rem 0;
+}
+#foodImage {
+  height: 22rem;
+  width: auto;
+}
+#recipeContent {
+  line-height: 1.3;
+}
+
+/* =============== Button ================ */
+.sign-in {
+  color: #264653;
+  background-color: white;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+}
+.sign-in:hover,
+.signin:focus {
+  color: #264653;
+  background-color: #e9c46a;
+  text-decoration: none;
+}
+
+.adjustButton {
+  display: inline-block;
+  margin: 0.5rem;
+  background-color: #e9c46a;
+  border: none;
+  border-radius: 100px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: 0.4s;
+}
+
+.adjustButton:hover,
+.adjustButton:focus {
+  background-color: #e9a802;
+  color: black;
+}
+
+#resetButton {
+  display: inline-block;
+  margin: 0.5rem;
+  background-color: #f4a261;
+  border: none;
+  border-radius: 100px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: 0.4s;
+}
+
+#resetButton:hover,
+#resetButton:focus {
+  background-color: #f48225;
+  color: black;
+}
+/* =============== Footer ================ */
+footer {
+  background-color: #264653;
+  margin-top: 5rem;
+}
+.footer-box {
+  color: #ffffff;
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 1.5rem 0rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.footer-box p {
+  margin: 0.3rem 1rem;
+}
+.footer-box a {
+  color: #ffffff;
+  margin: 0.3rem 1rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #e9c46a;
+}
+
+/* =============== Media queries ================ */
+@media screen and (max-width: 600px) {
+  #foodImage {
+    height: auto;
+    width: 100%;
+  }
+  #dish-button {
+    text-align: left;
+  }
+}

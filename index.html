@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+  <script src="script.js" defer></script>
+  <title>Recipes</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="logo-box" href="">
+        <img src="./images/fs-logo.png"
+          alt="a logo with the alphabets FS inside a rounded rectangle and the brand Flavor Script to the right"
+          id="main-logo" width="886" height="270"></a>
+      <div id="link-box">
+        <a href="#">Recipes</a>
+        <a href="#">Ingredients</a>
+        <a href="#">Features</a>
+        <a href="#">About Us</a>
+        <a href="#" class="sign-in">Sign In</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 id="selectRecipe"><label for="dishDropdown">Select a Recipe:</label></h2>
+      <select name="dishDropdown" id="dishDropdown">
+        <option value="">Recipe List</option>
+      </select>
+    </section>
+
+    <section id="recipeContent">
+      <h1 id="recipeName">JS-Load</h1>
+      <img id="foodImage" src="./images/carbonara.jpg" alt="JS-load" width="1920" height="1769">
+      <p id="description"></p>
+
+      <div id="prep">
+        <div><strong>Cuisine: </strong><span id="cuisine"></span></div>
+        <div><strong>Prep Time: </strong><span id="prepTime"></span></div>
+        <div><strong>Cook Time: </strong><span id="cookTime"></span></div>
+        <div><strong>Servings: <span id="servings"></span></strong></div>
+        <div><strong>Difficulty: </strong><span id="difficulty"></span></div>
+      </div>
+
+      <div><button class=adjustButton id="x2Button" type="button">Double Servings</button>
+        <button class=adjustButton id="plus1Button" type="button">+1 Serving</button>
+        <button class=adjustButton id="minus1Button" type="button">-1 Serving</button>
+        <button class=adjustButton id="unitToggleButton">Switch to Imperial</button>
+        <button id="resetButton">Reset</button>
+      </div>
+
+      <div class="ingredientSteps">
+        <h3>Ingredients:</h3>
+        <ul id="ingredientsList"></ul>
+        <h3>Instructions:</h3>
+        <ul id="instructionsList"></ul>
+      </div>
+      <h3>Nutritional Info:</h3>
+      <div><span>Calories - </span><span id="calories"></span></div>
+      <div><span>Protein - </span><span id="protein"></span></div>
+      <div><span>Carbohydrates - </span><span id="carbohydrates"></span></div>
+      <div><span>Fat - </span><span id="fat"></span></div>
+      <div>
+        <div>
+          <h3>Tags:</h3>
+          <ul id="tagsList"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--============================ Footer=======================-->
+  <footer>
+    <div class="footer-box">
+      <p>
+        © 2011 - 2024 FlavorScirpt, Co.
+        <a href="mailto:crypta@crypta.com">info@flavorscirpt.com</a>
+      </p>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms of Service</a>
+      <a href="">Editorial Guidelines</a>
+      <a href="">Advertise</a>
+      <a href="">Contact Us</a>
+    </div>
+  </footer>
+</body>
+
+</html>
