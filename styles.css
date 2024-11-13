@@ -50,13 +50,17 @@ nav a:hover {
 #selectRecipe {
   display: inline-block;
 }
+#servings {
+  color: #264653;
+  font-size: 1.2rem;
+}
 #dishDropdown {
   display: inline-block;
   margin-left: 1rem;
 }
 #prep {
   line-height: 1.5;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 li {
   margin: 0.2rem 0;
@@ -71,6 +75,10 @@ li {
 }
 #recipeContent {
   line-height: 1.3;
+}
+#nutritionList {
+  line-height: 1.5;
+  margin: 1rem;
 }
 
 /* =============== Button ================ */
