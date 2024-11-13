@@ -78,6 +78,11 @@ function showIngredients(y) {
       else if (ingredientUnit === "kilograms") ingredientUnit = "lbs";
       else if (ingredientUnit === "liters") ingredientUnit = "gallons";
     }
+    // Convert oz to lbs if >= 16 oz
+    if (ingredientUnit === "oz" && ingredientAmount >= 16) {
+      ingredientAmount = (ingredientAmount / 16).toFixed(2);
+      ingredientUnit = "lbs";
+    }
 
     const ingredient = document.createElement("li");
     ingredient.innerHTML = `${y[j].item} - ${ingredientAmount} ${ingredientUnit}`;
